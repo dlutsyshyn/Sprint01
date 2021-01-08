@@ -1,23 +1,49 @@
-.pole{ 
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+html {
+    padding: 10px;
+}
+
+.pole {
     color: rgb(78, 172, 59);
     background-color: rgb(255, 255, 255);
     padding: 10px 10px;
-    width: 350px;
+    width: 21.875rem;
 }
-    
-.pole:hover{
+
+.pole:hover {
     color: rgb(245, 40, 40);
     background-color: rgb(255, 255, 255);
 }
 
-.kn{
+.kn {
     color: rgb(21, 255, 0);
     background-color: rgb(255, 255, 255);
     padding: 10px;
 }
 
-.kn:hover{
+.kn:hover {
     color: rgb(255, 0, 0);
     background-color: rgb(163, 182, 255);
 }
+
+
+@media screen and (max-width: 434px) {
+    .pole {
+        width: 100%;
+    }
+
+    .form__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 7rem;
+        justify-content: space-around;
+    }
+}
+
 
